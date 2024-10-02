@@ -39,6 +39,10 @@ jobs:
         shell: bash
         run: cargo install dioxus-cli --version 0.6.0-alpha.2
 
+      - name: Cargo add dioxus v0.6.0-alpha.2 so build works
+        shell: bash
+        run: cargo add dioxus@0.6.0-alpha.2
+
       - name: ───⋆⋅☆⋅⋆─ Build Project ─⋆⋅☆⋅⋆───
         shell: bash
         run: dx build --release && cp ./target/dx-dist/home/index.html ./target/dx-dist/home/404.html
