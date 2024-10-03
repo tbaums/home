@@ -46,6 +46,7 @@ jobs:
       - name: ───⋆⋅☆⋅⋆─ Build Project ─⋆⋅☆⋅⋆───
         shell: bash
         run: dx build --release && cp ./target/dx-dist/home/index.html ./target/dx-dist/home/404.html
+        working-directory: /
 
       - name: Deploy Project
         uses: JamesIves/github-pages-deploy-action@v4.4.1
