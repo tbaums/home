@@ -42,7 +42,8 @@ fn Home() -> Element {
             href: asset!("./assets/tailwind.css")
         }
         div {
-            class: "min-h-screen bg-gray-100 p-10",
+            // Add "break-words" below to allow long url's and emails to break on small phone screens
+            class: "break-words min-h-screen bg-gray-100 p-10",
             // Main container for the resume
             div {
                 class: "max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6",
