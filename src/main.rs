@@ -39,7 +39,7 @@ fn Home() -> Element {
     rsx! {
         head::Link {
             rel: "stylesheet",
-            href: asset!("./assets/tailwind.css")
+            href: asset!("assets/tailwind.css")
         }
         div {
             // Add "break-words" below to allow long url's and emails to break on small phone screens
