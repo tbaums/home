@@ -7,8 +7,6 @@ use dioxus_logger::tracing::{info, Level};
 enum Route {
     #[route("/")]
     Home {},
-    #[route("/blog/:id")]
-    Blog { id: i32 },
 }
 
 fn main() {
@@ -25,16 +23,7 @@ fn App() -> Element {
 }
 
 #[component]
-fn Blog(id: i32) -> Element {
-    rsx! {
-        Link { to: Route::Home {}, "Go to counter" }
-        "Blog post {id}"
-    }
-}
-
-#[component]
 fn Home() -> Element {
-    let mut count = use_signal(|| 0);
 
     rsx! {
         head::Link {
