@@ -257,7 +257,7 @@ fn Home() -> Element {
                         class: "list-disc pl-5 text-gray-700",
                         li { "Programming Languages: Rust, SQL, Python, JavaScript" }
                         li { "Data Infrastructure: Kafka, Cassandra, Postgres, Kubeflow, SQLite" }
-                        li { "Cloud & Orchestration: Kubernetes (Certified Kubernetes Administrator), Docker, Terraform" }
+                        li { "Cloud & Orchestration: Kubernetes (Certified Kubernetes Administrator - CKA), Docker, Terraform" }
                     }
                 }
             }
